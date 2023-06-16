@@ -1837,10 +1837,10 @@ font-weight: 500;
   padding-top: 50px;
   text-align: center;
 }
-#section1 #image img{
+/* #section1 #image img{
 width: 380px;
 height: 500px;
-}
+} */
 
 @media (max-width:720px){
     .cart .leftcart{
