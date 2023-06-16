@@ -18,7 +18,7 @@ var responsive=document.getElementById("resnav");
 var responsives=document.getElementById("new");
 var navredata=document.getElementById("data");
 var ull=document.getElementById("ul");
-
+var loginform=document.getElementById('formlogin')
 
 
 
@@ -209,5 +209,17 @@ const cartCount = document.getElementById('cartCount');
 //   cartCount.textContent = count;
 // });
 
- 
+var z=true;
+function hidefunction() {
+    
+    z=!z;
+   if(z==true){
+    loginform.style.display='flex';
 
+   }
+   if(z==false){
+    loginform.style.display='none';
+    
+   }
+
+ } 
