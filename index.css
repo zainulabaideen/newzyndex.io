@@ -284,6 +284,9 @@ font-size: 18px;
     transition: all.3s ease-in-out;
     
     }
+    footer h4{
+        margin-top: 65px;
+    }
      footer .col4 .input{
         display: flex;
         margin: 20px 0;
@@ -1809,8 +1812,10 @@ height: 500px;
 @media (max-width:837px){
     footer {
       grid-template-columns: repeat(2, 1fr);
+     
 
    }
+
     .popularProducts .allboxes{
      
        grid-template-columns: repeat(2,1fr);
