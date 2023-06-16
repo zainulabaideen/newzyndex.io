@@ -171,7 +171,7 @@ flex-direction: column;
  nav .primarydata .navlinks .navicons a i{
     color: var(--light-black) ;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 13px;
 }
  nav .primarydata .navlinks .navicons a i:hover{
     color: var(--orange);
@@ -202,7 +202,7 @@ flex-direction: column;
 }
  nav .primarydata .bottomlinks .navicons a i{
  margin-left: 0.8rem;
- font-size: 18px;
+ font-size: 15px;
  color: var(--light-black);
 }
  nav .primarydata .bottomlinks .navicons a i:hover{
@@ -286,6 +286,8 @@ font-size: 18px;
     }
      footer .col4 .input{
         display: flex;
+        margin: 20px 0;
+
     }
      footer .col4 input{
         width: 70%;
