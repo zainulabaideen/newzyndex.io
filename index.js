@@ -195,19 +195,19 @@ const cartCount = document.getElementById('cartCount');
 // // cartincrementdecrementbuttons
 
 
-decrementBtn.addEventListener('click', () => {
+// decrementBtn.addEventListener('click', () => {
 
-      if (count > 0) {
-    count--;
-    cartCount.textContent = count;
-  }
+//       if (count > 0) {
+//     count--;
+//     cartCount.textContent = count;
+//   }
  
-});
+// });
 
-incrementBtn.addEventListener('click', () => {
-  count++;
-  cartCount.textContent = count;
-});
+// incrementBtn.addEventListener('click', () => {
+//   count++;
+//   cartCount.textContent = count;
+// });
 
  
 
