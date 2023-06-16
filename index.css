@@ -1788,7 +1788,7 @@ font-weight: 600;
   #color{
     color: rgb(110, 108, 108);
   }
-.images{
+  #section1 .images{
   display: flex;
   padding-top: 55px;
   
@@ -1847,6 +1847,11 @@ height: 500px;
         position: relative;
     width: 100%;    
     }
+    #section1  .images{
+        display: flex;
+        padding-top: 55px;
+        justify-content: center;
+      }
     #section1 #imagedata{
         margin-top: 30px;
         margin-left: 0%;
