@@ -187,27 +187,28 @@ function toggleImages(id) {
     plusImg.style.display = plusImg.style.display === 'none' ? 'inline' : 'none';
     minusImg.style.display = minusImg.style.display === 'none' ? 'inline' : 'none';
 }
-let count = 0;
-const decrementBtn = document.getElementById('decrementBtn');
-const incrementBtn = document.getElementById('incrementBtn');
-const cartCount = document.getElementById('cartCount');
+var count = 0;
+// const decrementBtn = document.getElementById('decrementBtn');
+// const incrementBtn = document.getElementById('incrementBtn');
+var cartCount = document.getElementById('cartCount');
 
 // // cartincrementdecrementbuttons
 
-
-// decrementBtn.addEventListener('click', () => {
-
-//       if (count > 0) {
-//     count--;
-//     cartCount.textContent = count;
-//   }
+// cartCount.textContent=0;
+function decredata() {
+    if (count > 0) {
+        count--;
+        cartCount.textContent = count;
+}
+}
+     
+  
  
-// });
 
-// incrementBtn.addEventListener('click', () => {
-//   count++;
-//   cartCount.textContent = count;
-// });
+function incredata() {
+  count++;
+  cartCount.innerText = count;
+}
 
 var z=true;
 function hidefunction() {
