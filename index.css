@@ -1379,6 +1379,7 @@ height: auto!important;
 
 }
 
+
 .aftertop #loginn:hover{
     text-decoration: none;
     color: var(--orange);
@@ -1407,12 +1408,12 @@ padding-left: 8px;
 .loginform input{
 box-sizing: border-box;
 width: 90%;
-margin: 0;
 outline: 0;
 line-height: normal;
 height: 30px;
 border:1px solid  #999999;
 margin:10px 5px  ;
+margin-right: 100%;
 padding: 0 15px; 
 }
 .loginform button{
@@ -1436,12 +1437,20 @@ padding: 0 15px;
     width: 14px;
     height: 14px;
 }
-.downdata .leftdata{
-    width: 45%;
-    margin-left: 30px;
-    border: 1px solid #e5e5e5;
+.downdata{
+    display: flex;
+    justify-content: center;
 }
-
+.downdata .leftdata{
+    width: 42%;
+    /* margin-left: 30px; */
+    }
+.downdata .rightdata{
+    width: 37%;
+    /* margin-left: 30px; */
+    border: 1px solid #e5e5e5;
+    height: fit-content;
+}
 .downdata .leftdata h3{ 
 margin-left: 30px;
 font-size: 26px;
@@ -1449,13 +1458,66 @@ font-family: 'Montserrat', sans-serif;
 font-weight: 500;
 
 }
-.downdata .rightdatatitle{
-    display: flex;
-    justify-content: space-between;
-    font-size: 18px;
-    font-family: 'Lato',sans-serif;
+.downdata .rightdata h3{ 
+    margin-left: 30px;
+    font-size: 26px;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    margin: 5px 15px;
+    margin: 0 0;
+    padding: 23px 25px;
+    
+    }
+
+.downdata .rightdatatitle table{
+    width: 100%;
+   text-align: left;
+   padding: 0 20px;
+  
+}
+.downdata .rightdatatitle th{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    padding-left: 12px;
+    border-bottom: 1px solid #e5e5e5;
+padding:30px 0;
+}
+
+.downdata .rightdatatitle .price {
+color: var(--orange);
+font-size: 21px;
+padding:30px 0 ;
+
+}
+.downdata .rightdatatitle  #formbtn{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    margin-bottom: 0px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+
+}
+.downdata .rightdatatitle  #formbtn:hover{
+  cursor: pointer;
+    background-color: var(--orange);
+transition: all 0.4s ease;
+}
+.downdata .rightdatatitle  #end{
+    padding-bottom: 150px;
+}
+.downdata .rightdatatitle td{
+   
+    padding: 20px 0;
+    font-size: 14px;
+    color: var(--dark-grey);
+    font-family: 'Lato',sans-serif;
+    /* margin: 5px 15px; */
+    padding-left: 15px;
+
+    border-bottom: 1px solid #e5e5e5;
 }
 .loginform button:hover{
     color: white;
@@ -1464,8 +1526,9 @@ font-weight: 500;
 }
 .downdata .rightdata{
 width: 45%;
+margin-top: 30px;
 }
-.downdata .leftdata input{
+.downdata .leftdata input,select{
     box-sizing: border-box;
 width: 90%;
 margin: 0;
@@ -1473,19 +1536,18 @@ outline: 0;
 line-height: normal;
 height: 30px;
 border:1px solid  #e5e5e5;
-margin:10px 5px ;
+margin:5px 25px ;
 padding: 0 15px; 
+color: var(--dark-grey);
 }
 .downdata .leftdata label{
     color: var(--dark-grey);
     display: block;
-    padding-left: 10px;  
-    font-family: 14px;
+    padding:5px 25px;  
+    font-family: 12px;
     font-family: 'Lato',sans-serif;
 }
-.downdata .leftdata select{
-    width: 45%;
-}
+
 .downdata .leftdata option{
     color: var(--dark-grey);
 }
@@ -1616,7 +1678,22 @@ height: 500px;
     .cart{
         width: 100%
     }
-   
+     .downdata{
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+    }
+    .downdata .leftdata{
+        width: 92%;
+        margin:0 4% ;
+
+        }
+    .downdata .rightdata{
+        margin:50px 6% ;
+
+        width: 88%;
+    }
     .cart .leftcart .pricesection>div{
         margin-right:1.0rem;
         }
@@ -1668,6 +1745,7 @@ height: 500px;
       flex-wrap: wrap;
     
     }
+   
     .faq .faq-font {
         font-size: 2rem;
     }
@@ -1739,6 +1817,7 @@ height: 500px;
         padding: 13px;
         border-radius: 3px;
     }
+    
     /* Contact Us Cards */
     .contactUsCards {
         flex-direction: column;
