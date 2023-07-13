@@ -187,27 +187,41 @@ function toggleImages(id) {
     plusImg.style.display = plusImg.style.display === 'none' ? 'inline' : 'none';
     minusImg.style.display = minusImg.style.display === 'none' ? 'inline' : 'none';
 }
-var count = 0;
-// const decrementBtn = document.getElementById('decrementBtn');
-// const incrementBtn = document.getElementById('incrementBtn');
+const decrementBtn = document.getElementById('decrementBtn');
+const incrementBtn = document.getElementById('incrementBtn');
+let count = 0;
 var cartCount = document.getElementById('cartCount');
 
 // // cartincrementdecrementbuttons
 
 // cartCount.textContent=0;
+
+function newfn(){
+    count++
+    alert(count)
+}
 function decredata() {
+
+
+    
+
     if (count > 0) {
         count--;
-        cartCount.textContent = count;
+        cartCount.textContent= count;
+        console.log(count)
 }
+// alert('hello')
 }
      
   
  
 
 function incredata() {
-  count++;
-  cartCount.innerText = count;
+
+    count++;
+    console.log(count)
+  document.getElementById('cartCount').textContent = count;
+  
 }
 
 var z=true;

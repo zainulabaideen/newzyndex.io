@@ -1251,7 +1251,7 @@ margin-right: 15px;
 .cart .leftcart .pricesection{
   position: relative;
     display: flex;
-    margin:0 50px;
+    margin:0 30px;
 }
 .cart .leftcart a{
     text-decoration: none;
@@ -1341,11 +1341,12 @@ height: auto!important;
     font-size: 24px;
     font-weight: 600;
 }
- .formtitleleft{
+ .formtitleleft {
     font-family: 'Lato', sans-serif;
     font-size: 14px;
-
-}
+    display: flex;
+    justify-content: right;
+ }
 .formtitleleft a{
     color: black;
 }
@@ -1657,75 +1658,7 @@ width: 380px;
 height: 500px;
 }
 
-@media (max-width:720px){
-    .cart .leftcart{
-        position: relative;
-    width: 100%;    
-    }
-    #section1  .images{
-        display: flex;
-        padding-top: 55px;
-        justify-content: center;
-      }
-    #section1 #imagedata{
-        margin-top: 30px;
-        margin-left: 0%;
-    
-    }
-    #section2 .container{
-        margin: 0 0%;
-    }
-    .cart{
-        width: 100%
-    }
-     .downdata{
-        display: flex;
-        margin-left: auto;
-        margin-right: auto;
-        flex-direction: column;
-    }
-    .downdata .leftdata{
-        width: 92%;
-        margin:0 4% ;
 
-        }
-    .downdata .rightdata{
-        margin:50px 6% ;
-
-        width: 88%;
-    }
-    .cart .leftcart .pricesection>div{
-        margin-right:1.0rem;
-        }
-        .cart .leftcart .product{
-
-            margin-left: 2.5rem;
-           
-        }
-        .cart .rightcart{
-            width: 80%;
-           
-            margin-left: auto;
-            margin-right: auto;
-        }
-}
-
-@media (max-width:375px){
-    .cart .leftcart .pricesection{
-       font-size: 10px !important;
-          margin:0 0px;
-      }
-      .cart .leftcart .product{
-
-        margin-left: 1.5rem;
-       
-    }
-    .loginform .btn{
-        width: 63%;
-        flex-direction: column;
-        text-align: center;
-    }
-}
 /* Screen Breakpoints */
 @media (max-width:1200px) {
     .faq-item {
@@ -1734,8 +1667,16 @@ height: 500px;
     }
     
 }
-@media (max-width:990px) {
-    .faq-item {
+
+@media (max-width:978px){
+    nav{
+       left: 0;
+       right: 0;
+       width: 100%;
+       position: sticky;
+       
+   }
+   .faq-item {
         margin-left: 5.5rem;
         margin-right: 5.5rem;
     }
@@ -1749,275 +1690,6 @@ height: 500px;
     .faq .faq-font {
         font-size: 2rem;
     }
-}
-@media (max-width:760px) {
-    .faq {
-        padding: 3rem;
-    }
-    .faq-item {
-        margin-left: 3rem;
-        margin-right: 3rem;
-    }
-    /* Cards */
-    .aboutUsBottom {
-        margin-top: 4rem;
-    }
-    .aboutUsBottom h1 {
-        font-size: 1.5rem;
-    }
-    .aboutUsBottom  h2 {
-        /* font-size: 1.0rem; */
-        text-align: center;
-    }
-    .aboutUsBottom .cardRow {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-    .aboutUsBottom .card {
-        width: 100%;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    /* Contact US Message 760px */
-    .messageMap {
-        flex-direction: column;
-        
-    }
-    .messageMap div {
-        width:90%;
-        margin: 2rem;
-        margin-left: 0rem;
-        margin-bottom: 1rem;
-        
-    }
-    .messageContainer {
-        padding: 4rem;
-        padding-top: 2rem;
-    }    
-    .messageContainer div {
-        margin-left: 0rem;
-        width: 80%;
-    }
-    .messageContainer h2 {
-        font-size: 2rem;
-    }
-    .messageContainer .input {
-        font-size: small;    
-        padding: 12px;
-        width: 25%;
-    }
-    .messageContainer .inputArea {
-        margin: -1rem 0rem;
-        font-size: 0.8rem;
-        height: 8rem;
-    }
-    .messageContainer .btn {
-        font-size: small;
-        padding: 13px;
-        border-radius: 3px;
-    }
-    
-    /* Contact Us Cards */
-    .contactUsCards {
-        flex-direction: column;
-        margin-left: 5rem;
-    }
-    .contactUsCards .cardsOuter {
-        width: 100%;
-    }
-
-
-}
-@media (max-width:360px) {
-    .faq-item {
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-
-    .aboutUsCenter {
-        margin: 5px;
-        margin-top: 4.5rem;
-    }
-    .contactUsCenter h2 {
-        font-size: 1.8rem;
-    }
-    
- 
-    
-
-    .messageContainer {
-        margin: -1rem;
-        padding: 2rem;
-        /* width: 10%; */
-    }    
-    .messageContainer div {
-        flex-direction: column;
-        width: 100%;
-    }
-    .messageContainer h2 {
-        font-size: 2rem;
-    }
-    .messageContainer .input {
-        font-size: small;    
-        padding: 12px;
-        width: 100%;
-        margin: 8px 0rem;
-    }
-    .messageContainer .inputArea {
-        margin: -1rem 0rem;
-        font-size: 0.8rem;
-        height: 8rem;
-        width: 16rem;
-    }
-    .messageContainer .btn {
-        font-size: small;
-        padding: 13px;
-        border-radius: 3px;
-    }
-
-    iframe {
-        padding: -3rem;
-        margin: 0rem;
-        margin-top: -3rem;
-        margin-right: -6rem;
-        width: 19rem;
-    }
-    .contactUsCards {
-        margin-left: 0rem;
-    }
-}
-
-@media (max-width:837px){
-    footer {
-      grid-template-columns: repeat(2, 1fr);
-     
-
-   }
-
-    .popularProducts .allboxes{
-     
-       grid-template-columns: repeat(2,1fr);
-       }
-        .messanger{
-           position: fixed;
-           left: 60%;
-            min-height: 250px;
-            line-height: 1;
-            border-radius: 15px;
-          
-        }
-        
-         .messanger .firstmessage{
-            position: relative;
-            height: 50px;
-            width:fit-content;
-            margin: 5px 5px;
-            background: #ffffff;
-            border-radius: 20px;
-            z-index: 200;
-        }
-
-
-}
-@media (max-width:770px){
-    .slider{
-        height: 400px;
-    }
-     .toys #img1{
-        width: 90%;
-       
-    
-    }
-     .toys #img2{
-        width: 90%;
-        margin-top: 2.5rem;
-    
-    }
-     .toys{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-        color: #323232;
-        margin-bottom: 3rem;
-    }
-     .services{
-        display: flex ;
-       flex-direction: column;
-      
-    }
-    footer {
-        grid-template-columns: repeat(1, 1fr);
-         margin-left: 4rem;
-     }
-     .sidecart .sidecarttitle{
-         width: 40%
-     
-     }
-     
-      .popularProducts .allboxes{
-       
-         grid-template-columns: repeat(1, 1fr);
-         }
- 
-      footer .footer_img{
-         display: flex;
-         width: 230px;
-         height: 170px;
- 
-         justify-content: center;
-         
-     }
-      nav .primarydata .bottomlinks #logo2 img{
-          width: 100%;
-  
-      }
-       .contactlogo{
-        left: 80%;
-      } 
-}
-@media (max-width:550px){
-
-    footer .footer_img{
-       display: flex;
-       width: 60%;
-       height: 170px;
-
-       justify-content: center;
-       
-       
-   }
-   .sidecart .sidecarttitle{
-       width: 100%;
-       left: 0;
-   
-   }
-   
-    .contactlogo{
-       left: 70%;
-     }
-    .messanger{
-       position: fixed;
-       /* top: 28.8%; */
-       left: 10%;
-        min-height: 250px;
-        line-height: 1;
-        border-radius: 15px;
-      
-    }
-    .navtop{
-       display: none !important;
-    }
-}
-@media (max-width:978px){
-    nav{
-       left: 0;
-       right: 0;
-       width: 100%;
-       position: sticky;
-       
-   }
    
     .responsivenav a{
        color: var(--orange);
@@ -2132,3 +1804,334 @@ height: 500px;
 
    }
 }
+@media (max-width:837px){
+    footer {
+      grid-template-columns: repeat(2, 1fr);
+     
+
+   }
+
+    .popularProducts .allboxes{
+     
+       grid-template-columns: repeat(2,1fr);
+       }
+        .messanger{
+           position: fixed;
+           left: 60%;
+            min-height: 250px;
+            line-height: 1;
+            border-radius: 15px;
+          
+        }
+        
+         .messanger .firstmessage{
+            position: relative;
+            height: 50px;
+            width:fit-content;
+            margin: 5px 5px;
+            background: #ffffff;
+            border-radius: 20px;
+            z-index: 200;
+        }
+
+
+}
+@media (max-width:760px) {
+    .faq {
+        padding: 3rem;
+    }
+    .faq-item {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+     .slider{
+        height: 400px;
+    }
+     .toys #img1{
+        width: 90%;
+       
+    
+    }
+     .toys #img2{
+        width: 90%;
+        margin-top: 2.5rem;
+    
+    }
+     .toys{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        color: #323232;
+        margin-bottom: 3rem;
+    }
+     .services{
+        display: flex ;
+       flex-direction: column;
+      
+    }
+    footer {
+        grid-template-columns: repeat(1, 1fr);
+         margin-left: 4rem;
+     }
+     .sidecart .sidecarttitle{
+         width: 40%
+     
+     }
+     
+      .popularProducts .allboxes{
+       
+         grid-template-columns: repeat(1, 1fr);
+         }
+ 
+      footer .footer_img{
+         display: flex;
+         width: 230px;
+         height: 170px;
+ 
+         justify-content: center;
+         
+     }
+      nav .primarydata .bottomlinks #logo2 img{
+          width: 100%;
+  
+      }
+       .contactlogo{
+        left: 80%;
+      }
+    /* Cards */
+    .aboutUsBottom {
+        margin-top: 4rem;
+    }
+    .aboutUsBottom h1 {
+        font-size: 1.5rem;
+    }
+    .aboutUsBottom  h2 {
+        /* font-size: 1.0rem; */
+        text-align: center;
+    }
+    .aboutUsBottom .cardRow {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .aboutUsBottom .card {
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    /* Contact US Message 760px */
+    .messageMap {
+        flex-direction: column;
+        
+    }
+    .messageMap div {
+        width:90%;
+        margin: 2rem;
+        margin-left: 0rem;
+        margin-bottom: 1rem;
+        
+    }
+    .messageContainer {
+        padding: 4rem;
+        padding-top: 2rem;
+    }    
+    .messageContainer div {
+        margin-left: 0rem;
+        width: 80%;
+    }
+    .messageContainer h2 {
+        font-size: 2rem;
+    }
+    .messageContainer .input {
+        font-size: small;    
+        padding: 12px;
+        width: 25%;
+    }
+    .messageContainer .inputArea {
+        margin: -1rem 0rem;
+        font-size: 0.8rem;
+        height: 8rem;
+    }
+    .messageContainer .btn {
+        font-size: small;
+        padding: 13px;
+        border-radius: 3px;
+    }
+     .cart .leftcart{
+        position: relative;
+    width: 100%;    
+    }
+    #section1  .images{
+        display: flex;
+        padding-top: 55px;
+        justify-content: center;
+      }
+    #section1 #imagedata{
+        margin-top: 30px;
+        margin-left: 0%;
+    
+    }
+    #section2 .container{
+        margin: 0 0%;
+    }
+    .cart{
+        width: 100%
+    }
+     .downdata{
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+    }
+    .downdata .leftdata{
+        width: 92%;
+        margin:0 4% ;
+
+        }
+    .downdata .rightdata{
+        margin:50px 6% ;
+
+        width: 88%;
+    }
+    .cart .leftcart .pricesection>div{
+        margin-right:1.0rem;
+        }
+        .cart .leftcart .product{
+
+            margin-left: 2.5rem;
+           
+        }
+        .cart .rightcart{
+            width: 80%;
+           
+            margin-left: auto;
+            margin-right: auto;
+        }
+    
+    /* Contact Us Cards */
+    .contactUsCards {
+        flex-direction: column;
+        margin-left: 5rem;
+    }
+    .contactUsCards .cardsOuter {
+        width: 100%;
+    }
+
+
+}
+@media (max-width:550px){
+    .cart .leftcart .pricesection {
+        margin: 0 -8px;
+    }
+    footer .footer_img{
+       display: flex;
+       width: 60%;
+       height: 170px;
+
+       justify-content: center;
+       
+       
+   }
+   .sidecart .sidecarttitle{
+       width: 90%;
+       left: 0;
+   
+   }
+   
+    .contactlogo{
+       left: 70%;
+     }
+    .messanger{
+       position: fixed;
+       /* top: 28.8%; */
+       left: 10%;
+        min-height: 250px;
+        line-height: 1;
+        border-radius: 15px;
+      
+    }
+    .navtop{
+       display: none !important;
+    }
+}
+
+@media (max-width:360px) {
+    .faq-item {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+     .cart .leftcart .pricesection{
+       font-size: 10px !important;
+          margin:0 0px;
+      }
+      .cart .leftcart .product{
+
+        margin-left: 1.5rem;
+       
+    }
+    .loginform .btn{
+        width: 63%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .aboutUsCenter {
+        margin: 5px;
+        margin-top: 4.5rem;
+    }
+    .contactUsCenter h2 {
+        font-size: 1.8rem;
+    }
+    .formtopdata{
+    grid-template-columns: repeat(1,1fr);
+   
+}
+ 
+    
+
+    .messageContainer {
+        margin: -1rem;
+        padding: 2rem;
+        /* width: 10%; */
+    }    
+    .messageContainer div {
+        flex-direction: column;
+        width: 100%;
+    }
+    .messageContainer h2 {
+        font-size: 2rem;
+    }
+    .messageContainer .input {
+        font-size: small;    
+        padding: 12px;
+        width: 100%;
+        margin: 8px 0rem;
+    }
+    .messageContainer .inputArea {
+        margin: -1rem 0rem;
+        font-size: 0.8rem;
+        height: 8rem;
+        width: 16rem;
+    }
+    .messageContainer .btn {
+        font-size: small;
+        padding: 13px;
+        border-radius: 3px;
+    }
+
+    iframe {
+        padding: -3rem;
+        margin: 0rem;
+        margin-top: -3rem;
+        margin-right: -6rem;
+        width: 19rem;
+    }
+    .contactUsCards {
+        margin-left: 0rem;
+    }
+}
+
+
+
+
